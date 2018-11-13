@@ -67,7 +67,6 @@
 
 (defvar bongocat-initial-modeline-cdr nil)
 
-;;;###autoload
 (define-minor-mode bongocat-mode
   "Bongocat minor mode"
   :global t
