@@ -73,6 +73,7 @@
   :global t
   (if bongocat-mode
       (progn
+        (setq bongocat-current-state "up")
         (bongocat-load-frames)
         (unless bongocat-initial-modeline-cdr
           (setq bongocat-initial-modeline-cdr (cdr mode-line-position)))
