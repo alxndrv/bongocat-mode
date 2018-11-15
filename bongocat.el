@@ -79,8 +79,9 @@
         
         (setcdr mode-line-position (cons '(:eval (list (bongocat-initialize)))
                                          (cdr bongocat-initial-modeline-cdr)))
-        (add-hook 'post-self-insert-hook #'bongocat-smash))
+        (add-hook 'pre-command-hook #'bongocat-smash))
     (setcdr mode-line-position bongocat-initial-modeline-cdr)
+    (remove-hook 'pre-command-hook #'bongocat-smash)
     )
   )
 
