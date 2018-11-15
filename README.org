@@ -1,0 +1,34 @@
+
+* Bongo Cat for Emacs 
+This package is heavily inspired by TeMPOraL's [[https://github.com/TeMPOraL/nyan-mode][nyan-mode]]
+and dp12's [[https://github.com/dp12/parrot][parrot]]. Following the same principle, this package offers 
+you yet another animated companion to brighten up the day and decorate your boring modeline.
+Except this time it's Bongo Cat!
+
+* Installation
+The package is not yet available on MELPA, thus the only way to install it currently is by either 
+cloning this repository and adding =bongocat.el= to your load-path.
+Alternatively users of =straight-use-package= may use something like this: 
+#+BEGIN_SRC emacs-lisp
+  (straight-use-package
+   '(bongocat
+     :type git
+     :host github
+     :repo "alxndrv/bongocat-mode"
+     :files "bongocat.el" "img/*"))
+#+END_SRC
+
+* Usage
+Upon installation, this mode can be toggled on and off (why?) by simply invoking the following;
+#+BEGIN_SRC emacs-lisp
+  (bongocat-mode)
+#+END_SRC
+
+That's it! You now have your own little Bongo Cat hitting the modeline to the rhythm of your keyboard inputs!
+And that truly is it, this package offers no actual functionality. 
+But once you have your own Bongo Cat, do you need anything else?
+
+* Notes 
+Both TeMPOraL's [[https://github.com/TeMPOraL/nyan-mode][nyan-mode]] and dp12's [[https://github.com/dp12/parrot][parrot]] played a big part in the 
+creation of this package, both as a source of inspiration and a great
+reference when it comes to the implementation. You should check both of them out! 
