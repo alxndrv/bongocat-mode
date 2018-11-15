@@ -8,14 +8,14 @@ Except this time it's Bongo Cat!
 * Installation
 The package is not yet available on MELPA, thus the only way to install it currently is by either 
 cloning this repository and adding =bongocat.el= to your load-path.
-Alternatively users of =straight-use-package= may use something like this: 
+Alternatively users of =straight.el= may use something like this:
 #+BEGIN_SRC emacs-lisp
   (straight-use-package
    '(bongocat
      :type git
      :host github
      :repo "alxndrv/bongocat-mode"
-     :files "bongocat.el" "img/*"))
+     :files "*"))
 #+END_SRC
 
 * Usage
